@@ -1,3 +1,9 @@
+:root {
+  --skillColor: "navy";
+  --fontWeight: "bold";
+  --textCase: "uppercase";
+}
+
 html {
   background-color: #f1f5f9;
   font-family: sans-serif;
@@ -15,12 +21,35 @@ body {
   box-sizing: border-box;
 }
 
-h1 {
+/* h1 {
   margin: 1rem 0;
   font-size: 2.5rem;
+} */
+
+h1 {
+  color: purple;
+  font-size: 4rem;
+  margin: 1rem 0;
+}
+.skill {
+  color: var(--skillColor);
+  font-weight: var(--fontWeight);
+  text-transform: var(--textCase);
 }
 
 /* nav styles */
+.hamburger {
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  display: block;
+  width: 40px;
+  height: 5px;
+  margin-bottom: 10px;
+  background-color: #ff9776;
+}
 
 .nav-links {
   width: 100%;
@@ -62,5 +91,9 @@ h1 {
   .nav-links a {
     display: inline-block;
     padding: 15px 20px;
+  }
+
+  .hamburger {
+    display: none;
   }
 }
