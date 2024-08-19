@@ -202,6 +202,10 @@ h1 {
   -webkit-background-clip: text;
 }
 
+.line {
+  display: block;
+}
+
 /* Peeps styles */
 .css-peeps {
   --peep-head: short5;
@@ -239,5 +243,9 @@ h1 {
   .css-peeps {
     width: 702px;
     height: 608px;
+  }
+
+  .line {
+    display: inline-block;
   }
 }

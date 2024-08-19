@@ -22,7 +22,7 @@ const TypingMessage = () => {
     <div>
       <h2>
         {" "}
-        Hello, I'm a <span className="gradient" ref={el} /> Developer{" "}
+        <span className="line">Hello, I'm a </span> <span className="gradient" ref={el} /> <span className="line">Developer</span>{" "}
       </h2>
     </div>
   );
