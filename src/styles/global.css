@@ -44,6 +44,10 @@ html {
   font-family: sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0 auto;
   width: 100%;
@@ -53,8 +57,11 @@ body {
   line-height: 1.5;
 }
 
-* {
-  box-sizing: border-box;
+@media (max-width: 600px) {
+  body {
+    font-size: 1.5rem; /* Adjust font size for smaller screens */
+    padding: 0.5rem; /* Adjust padding for smaller screens */
+  }
 }
 
 /* Dark mode */
@@ -144,11 +151,10 @@ h1 {
   }
 }
 
-
 /* Home styles */
 #hero {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
 }
 
 @media screen and (min-width: 1921px) {
@@ -157,14 +163,9 @@ h1 {
   }
 }
 
-.home-content {
-  max-width: 70%;
-}
-
 .home-content h2 {
-  font-size: 4rem;
+  font-size: 3.8rem;
   margin-bottom: 1rem;
-  
 }
 
 .btn {
@@ -190,7 +191,16 @@ h1 {
   color: var(--clr-primary-400);
 }
 
+.home-img {
+  margin: 0 auto;
+}
 
+/* Gradient styles */
+.gradient {
+  background-image: linear-gradient(92deg, #6a68d9 10%, #da6cae 60%, #f5a957);
+  -webkit-text-fill-color: #0000;
+  -webkit-background-clip: text;
+}
 
 /* Peeps styles */
 .css-peeps {
@@ -200,8 +210,8 @@ h1 {
   --peep-facial-hair: chinhair;
   --peep-body: turtleneck;
 
-  --peep-hat-color: #FC03C2;
-  --peep-hair-color: #7300E6;
+  --peep-hat-color: #fc03c2;
+  --peep-hair-color: #7300e6;
   --peep-skin-color: #87ceeb;
   --peep-accessory-color: #000000;
   --peep-facial-hair-color: #ffd700;
@@ -209,22 +219,25 @@ h1 {
   --peep-clothes-color: #ff0000;
 
   display: inline-block;
-  width: 702px;
-  height: 608px;
+  width: 20rem;
+  height: 18rem;
   background: white;
   border-radius: 10px;
   border: 2px solid var(--peep-accessory-color);
   border-radius: 50%;
 }
 
-/* Gradient styles */
-.gradient {
-  background-image: linear-gradient(
-    92deg,
-    #6a68d9 10%,
-    #da6cae 60%,
-    #f5a957
-  );
-  -webkit-text-fill-color: #0000;
-  -webkit-background-clip: text;
+/* Media queries */
+
+@media (min-width: 40em) {
+  #hero {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .css-peeps {
+    width: 702px;
+    height: 608px;
+  }
 }
