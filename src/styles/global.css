@@ -1,7 +1,42 @@
+@import url(https://unpkg.com/css-peeps@1/css-peeps.css);
+
 :root {
   --skillColor: "navy";
   --fontWeight: "bold";
   --textCase: "uppercase";
+
+  --ff-sans: "IBM Plex Sans", sans-serif;
+  --ff-serif: "IBM Plex Serif", serif;
+
+  /* small screen font-sizes */
+  --fs-200: 0.75rem;
+  --fs-300: 1rem;
+  --fs-400: 1.25rem;
+  --fs-500: 1.375rem;
+  --fs-600: 1.75rem;
+  --fs-900: 2.125rem;
+
+  --fw-200: 200;
+  --fw-300: 300;
+  --fw-400: 400;
+  --fw-700: 700;
+
+  --bg-color: #1f242d;
+  --second-bg-color: #323946;
+  --text-color: #fff;
+  --main-color: #0ef;
+
+  --clr-neutral-100: #fff;
+  --clr-neutral-200: #eef1f6;
+  --clr-neutral-300: #a9afbc;
+  --clr-neutral-400: #737b8c;
+  --clr-neutral-500: #434956;
+  --clr-neutral-900: #020203;
+
+  --clr-primary-300: #f3f7ff;
+  --clr-primary-400: #8ea8da;
+
+  --br: 1rem;
 }
 
 html {
@@ -14,6 +49,7 @@ body {
   width: 100%;
   /* max-width: 90ch; */
   padding: 1rem;
+  font-size: 1.4rem;
   line-height: 1.5;
 }
 
@@ -106,4 +142,89 @@ h1 {
   .hamburger {
     display: none;
   }
+}
+
+
+/* Home styles */
+#hero {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (min-width: 1921px) {
+  #hero {
+    max-width: 85%;
+  }
+}
+
+.home-content {
+  max-width: 70%;
+}
+
+.home-content h2 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  
+}
+
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  border: 0;
+  background: none;
+  font-weight: var(--fw-700);
+  font-size: var(--fs-300);
+  font-family: var(--ff-sans);
+  text-decoration: none;
+  color: var(--clr-neutral-200);
+}
+
+.btn::after {
+  content: "\203A";
+  margin-left: 1em;
+  font-weight: var(--fw-300);
+}
+
+.btn:hover,
+.btn:focus {
+  color: var(--clr-primary-400);
+}
+
+
+
+/* Peeps styles */
+.css-peeps {
+  --peep-head: short5;
+  --peep-face: angry;
+  --peep-accessory: sunglasses2;
+  --peep-facial-hair: chinhair;
+  --peep-body: turtleneck;
+
+  --peep-hat-color: #FC03C2;
+  --peep-hair-color: #7300E6;
+  --peep-skin-color: #87ceeb;
+  --peep-accessory-color: #000000;
+  --peep-facial-hair-color: #ffd700;
+  --peep-object-color: #ffa500;
+  --peep-clothes-color: #ff0000;
+
+  display: inline-block;
+  width: 702px;
+  height: 608px;
+  background: white;
+  border-radius: 10px;
+  border: 2px solid var(--peep-accessory-color);
+  border-radius: 50%;
+}
+
+/* Gradient styles */
+.gradient {
+  background-image: linear-gradient(
+    92deg,
+    #6a68d9 10%,
+    #da6cae 60%,
+    #f5a957
+  );
+  -webkit-text-fill-color: #0000;
+  -webkit-background-clip: text;
 }

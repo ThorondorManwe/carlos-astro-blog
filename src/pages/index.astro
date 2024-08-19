@@ -1,27 +1,24 @@
 ---
 import Greeting from "../components/Greeting";
+import TypingMessage from "../components/TypingMessage";
 import BaseLayout from "../layouts/BaseLayout.astro";
 const pageTitle = "Carlos Rangel Dev";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <style>
-    h2,
-    .gradient {
-      font-size: clamp(2rem, 10vw, 8rem);
-    }
+  <section class="home" id="hero">
 
-    .gradient {
-      background-image: linear-gradient(
-        92deg,
-        #6a68d9 10%,
-        #da6cae 60%,
-        #f5a957
-      );
-      -webkit-text-fill-color: #0000;
-      -webkit-background-clip: text;
-    }
-  </style>
-  <h2>Web <span class="gradient">Developer from Aguascalientes, MX</span></h2>
-  <Greeting client:load messages={["Hi", "Hello", "Howdy", "Hey there"]} />
+    <div class="home-content">
+      <TypingMessage client:load />
+      <p>I am a programmer from Aguascalientes, México</p>
+      <p>I like to learn new stuff on the web, books and courses. I like to practice judo and read scary books in my free time.</p>
+
+      <a href="/public/CV_Web_Developer_Carlos_Rangel.pdf" class="btn">Download CV</a>
+    </div>
+
+    <div class="home-img">
+      <!-- <img src="images/home.png" alt="" /> -->
+      <a class="css-peeps" href="https://www.linkedin.com/in/carlos-rangel-dev/" target="_blank"></a>
+    </div>
+  </section>
 </BaseLayout>
