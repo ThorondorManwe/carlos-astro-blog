@@ -232,10 +232,22 @@ h1 {
 }
 
 /* Media queries */
+/* This media query applies styles only to devices with a 
+viewport width of at least 30em (480px) */
+@media (min-width: 30em) {
+  #hero {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
 
+
+/* This media query applies styles only to devices with a 
+viewport width of at least 40em (640px) */
 @media (min-width: 40em) {
   #hero {
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
   }
@@ -243,6 +255,16 @@ h1 {
   .css-peeps {
     width: 702px;
     height: 608px;
+  }
+}
+
+/* This media query applies styles only to devices with a
+viewport width of at least 80em (1280px) */
+@media (min-width: 80em) {
+  #hero {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .line {
