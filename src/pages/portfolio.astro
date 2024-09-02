@@ -1,0 +1,68 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import { FaExternalLinkAlt, FaAngleRight } from "react-icons/fa";
+const pageTitle = "My Portfolio";
+---
+
+<BaseLayout pageTitle={pageTitle}>
+  <!-- portfolio section design -->
+  <section class="portfolio" id="portfolio">
+    <h2 class="heading">Latest <span>Projects</span></h2>
+
+    <div class="portfolio-container">
+      
+        <div class="portfolio-box">
+        <img src="https://micaminodev.com/wp-content/uploads/Prep_2024_portada.webp" alt="" />
+        <div class="portfolio-layer">
+          <h4>PREP 2024</h4>
+          <p>Programa de Resultados Electorales Preliminares 2024</p>
+
+          <div class="portfolio-links">
+              <a href="https://prep2024.ieeags.mx/ayuntamientos" target="_blank"><FaExternalLinkAlt /></a>
+              <a href="/projects/project-1">more <FaAngleRight /></a>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="portfolio-box">
+        <img src="https://micaminodev.com/wp-content/uploads/Property_pulse.webp" alt="" />
+        <div class="portfolio-layer">
+          <h4>Property Pulse</h4>
+          <p>A project from the course Next.js From Scratch</a></p>
+
+          <div class="portfolio-links">
+            <a href="https://property-pulse-sable.vercel.app/" target="_blank"><FaExternalLinkAlt /></a>
+            <a href="/projects/property-pulse">more <FaAngleRight /></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-box">
+        <img src="https://micaminodev.com/wp-content/uploads/GitHub_Finder.webp" alt="" />
+        <div class="portfolio-layer">
+          <h4>GitHub Finder</h4>
+          <p>Application to search for GitHub profiles</p>
+          
+          <div class="portfolio-links">
+            <a href="https://github-finder-sand-five.vercel.app/" target="_blank"><FaExternalLinkAlt /></a>
+            <a href="/projects/github-finder">more <FaAngleRight /></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="portfolio-box">
+        <img src="https://micaminodev.com/wp-content/uploads/House_Marketplace.webp" alt="" />
+        <div class="portfolio-layer">
+          <h4>House Marketplace</h4>
+          <p>Application for listing and searching houses for sale or for rent</p>
+          <div class="portfolio-links">
+            <a href="https://house-marketplace-roan-nine.vercel.app/" target="_blank"><FaExternalLinkAlt /></a>
+            <a href="/projects/house-marketplace">more <FaAngleRight /></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+   </section>
+</BaseLayout>

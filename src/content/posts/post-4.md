@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/BlogLayout.astro
 title: My First Contribution to an Open Source Project!
 author: Carlos Rangel
 description: "Really happy to be working with the guys at Playful Programming!"

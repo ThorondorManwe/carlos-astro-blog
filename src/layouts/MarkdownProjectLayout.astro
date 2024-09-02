@@ -7,16 +7,9 @@ const { frontmatter } = Astro.props;
 
   <div class="article-full flow-content">
     <p><em>{frontmatter.description}</em></p>
-    <p>Published: {frontmatter.pubDate.toString().slice(0,15)}</p>
+    <p>Working at: {frontmatter.jobplace}</p>
   
-    <p>Written by: {frontmatter.author}</p>
-  
-    <img src={frontmatter.image.url} width="600" alt={frontmatter.image.alt} />
-  
-    <div class="tags">
-      {frontmatter.tags.map((tag) => (
-        <p class="tag"><a href={`/tags/${tag}`}>{tag}</a></p>
-      ))}
+    <img class="project-image" src={frontmatter.image.url} alt={frontmatter.image.alt} />
     </div>
   </div>
 
