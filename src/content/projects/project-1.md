@@ -6,7 +6,7 @@ description: 'My first job as a Front-End Developer.'
 author: 'Carlos Rangel'
 jobplace: 'Instituto Estatal Electoral de Aguascalientes'
 image:
-    url: '../../../public/images/prep_portada.webp'
+    url: 'https://micaminodev.com/wp-content/uploads/Prep_2024_portada.webp'
     alt: 'Programa de Resultados Electorales Preliminares 2024.'
 ---
 This was my first official job as a web developer. To this day I am very grateful to the State Electoral Institute of Aguascalientes for giving me the opportunity to test my skills, improve my knowledge, learn new technologies such as Next.js and meet great professionals who would later become friends.
