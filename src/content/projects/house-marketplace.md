@@ -15,7 +15,7 @@ I implemented a form for Sign in and Sign Up, and then saved the user informatio
 
 Finally I implemented the functionality to log in with Google through Google OAuth.
 
-<img src="https://micaminodev.com/wp-content/uploads/House_marketplace_detail.webp" width="650">
+<img src="https://micaminodev.com/wp-content/uploads/House_marketplace_detail.webp" class="project-image">
 
 
 

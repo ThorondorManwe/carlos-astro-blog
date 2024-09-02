@@ -14,7 +14,7 @@ For this I used TailwindCSS and Daisy UI and I created the components, first the
 
 Then I connected the project to GitHub with the API through my token. I created components to show the list of users, the profile of each user, the functionality to clean the results of a search and the fetching of users.
 
-<img src="https://micaminodev.com/wp-content/uploads/GitHub_Finder-detalle-cuenta.webp" width="650">
+<img src="https://micaminodev.com/wp-content/uploads/GitHub_Finder-detalle-cuenta.webp" class="project-image">
 
 Here I put into practice the React hook called useReducer that would serve me later in my professional life.
 
