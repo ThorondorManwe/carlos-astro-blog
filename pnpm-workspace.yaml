@@ -1,0 +1,11 @@
+# pnpm settings for this single-package app. packages is omitted on purpose,
+# so only the root package is included and this is not a monorepo.
+allowBuilds:
+  # Vite, which Astro uses to bundle, runs esbuild's install script to select
+  # the platform binary.
+  esbuild: true
+  # sharp is an optional Astro image dependency. This site does not use it.
+  sharp: false
+  # Vite's optional file watcher. pnpm installs it only on macOS, where the
+  # native install script has to be approved or installation stops.
+  fsevents: true
